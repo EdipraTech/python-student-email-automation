@@ -1,6 +1,6 @@
 import csv
 
-# if python is not installed, you can use py2exe (only on windows) to convert the python file to an exe file
+# if python is not installed, you can use py2exe (only on windows) to convert the python file to an exe file, if it is installed, run "python3 ./student.py" in a terminal while inside the folder containing "student.py"
 
 final = []
 # Change yog to be the correct OU
