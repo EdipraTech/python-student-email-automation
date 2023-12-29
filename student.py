@@ -4,7 +4,7 @@ import csv
 
 final = []
 # Change yog to be the correct OU
-yog = '/Students/StudentsUnder13_restricted/ACES Students/YOG 2037.aces'
+yog = '/Students/StudentsUnder13_restricted/ACES Students/YOG 2032.aces'
 
 # make sure the student.csv is in the same folder as this file
 # student.csv needs the following fields to work (the order they are in does not matter)
@@ -18,12 +18,12 @@ with open('students.csv', 'r', encoding='utf-8-sig') as csv_file:
         students = {}
         students['First Name [Required]'] = line['FirstName']
         students['Last Name [Required]'] = line['LastName']
-        students['Password [Required]'] = "abcd" + line['LASID'].rstrip('0')
+        students['Password [Required]'] = "abcd" + line['LASID'].lstrip('0')
         students['Org Unit Path [Required]'] = yog
         if line['MiddleName'] == 'NMN':
-            students['New Primary Email [Required]'] = line['FirstName'][0] + line['LastName'] + '@arrsd.org'
+            students['Email Address [Required]'] = line['FirstName'][0] + line['LastName'] + '@arrsd.org'
         else:
-            students['New Primary Email [Required]'] = line['FirstName'][0] + line['MiddleName'][0] + line['LastName'] + '@arrsd.org'
+            students['Email Address [Required]'] = line['FirstName'][0] + line['MiddleName'][0] + line['LastName'] + '@arrsd.org'
         final.append(students)
     
 keys = final[0].keys()
