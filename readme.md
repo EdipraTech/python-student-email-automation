@@ -8,10 +8,10 @@ System Properties -> Environment Variables -> Path -> Edit -> add python3 and pi
 
 ## To Use
 
-Open python file in notepad or a different python editor and edit the "yog" variable to the desired OU
-rename Aspen csv to students.csv
-open command line, powershell, or a terminal
-type "pip install csv"
-type "python3 student.py" and press enter
-within the folder you will find a new file called "emails.csv"
-on google admin choose bulk upload and select the emails.csv file then upload
+Open python file in notepad or a different python editor and edit the "yog" variable to the desired OU \
+rename Aspen csv to students.csv \
+open command line, powershell, or a terminal \
+type "pip install csv" \
+type "python3 student.py" and press enter \
+within the folder you will find a new file called "emails.csv" \
+on google admin choose bulk upload and select the emails.csv file then upload \
